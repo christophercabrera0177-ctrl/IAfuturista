@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <title> Mi pagina en el Web - 1</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.10.1/bootstrap-table.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Estilo del menú lateral */
+    .menu {
+      height: 100%;
+      /* Alto total */
+      width: 0;
+      /* Oculto al inicio */
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #111;
+      overflow-x: hidden;
+      transition: 0.4s;
+      padding-top: 60px;
+    }
+
+    .menu a {
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #575757;
+    }
+
+    .menu .cerrar {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      font-size: 30px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    /* Botón para abrir el menú */
+    .abrir {
+      font-size: 20px;
+      cursor: pointer;
+      background: #111;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+    }
+
+    .contenido {
+      padding: 20px;
+    }
+
+    body {
+      background-color: rgba(255, 228, 196, 0.473);
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f3f3f3;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 15px;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      background: #444;
+      padding: 10px;
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      background: #4CAF50;
+      color: white;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    button:hover {
+      background: #45a049;
+    }
+
+    section {
+      display: none;
+      padding: 30px;
+    }
+
+    section.active {
+      display: block;
+    }
+
+    body {
+      background-color: rgba(163, 207, 224, 0.938);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <!-- Botón de apertura -->
+    <button class="abrir" onclick="abrirMenu()">☰ Menu lateral</button>
+
+    <!-- Menú lateral -->
+    <div id="miMenu" class="menu">
+      <a href="javascript:void(0)" class="cerrar" onclick="cerrarMenu()">&times;</a>
+      <a href="https://www.ibm.com/mx-es/think/topics/artificial-intelligence">Mas informacion</a>
+      <a href="https://www.ia.center/es/">Paginas</a>
+      <a href="http://prepasanjosedelvalle.sems.udg.mx/">Nosotros</a>
+      <a href="#contactos" onclick="cerrarMenu()">Contacto</a>
+    </div>
+    <header>
+      <h1>Menu principal</h1>
+    </header>
+
+
+
+    <nav>
+      <button onclick="mostrarSeccion('inicio')">Inicio</button>
+      <button onclick="mostrarSeccion('nosotros')">Nosotros</button>
+      <button onclick="mostrarSeccion('contacto')">Contacto</button>
+      <button onclick="mostrarSeccion('IA')">Mas sobre la IA</button>
+
+    </nav>
+
+    <main>
+      <section id="inicio" class="active">
+        <h2>Bienvenido</h2>
+        <p> Bienvenido ami pagina Web aqui encontraras informacion sobre las inteligencias artificiales y mas</p>
+      </section>
+
+      <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>Pagina creada y diseñada por Christopher Cabrera de la Cruz estudiante de la UDG</p>
+      </section>
+
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Para mas informacion contacte a 5512377842
+          Disponible de 8 am a 6 pm.</p>
+      </section>
+      <section id="IA">
+        <h2>¿Que es la Inteligencia artificial?</h2>
+        <p>La IA es una herramienta muy funcional que te ayuda a resolver problemas de manera rapida y eficiente
+          aparte que la IA aparte de resolver problemas tambien genera informacion que necesites para tu ayuda
+        </p>
+        <center><img width="500"
+            src="https://gaceta.cch.unam.mx/sites/default/files/styles/facebook/public/2020-06/inteligencia-artificial.jpg?h=b6f9dbc0&itok=Q06LvoTD">
+        </center>
+
+      </section>
+    </main>
+</body>
+
+</html>
+</style>
+<main>
+
+
+
+
+
+
+
+
+
+  <!-- Elementos de HTML-->
+
+
+
+
+  <!-- Contenido principal -->
+
+
+  <h1><i>
+      <center>Inteligencia Artificial</center>
+  </h1></i>
+  <h2><i>
+      <center> Hecha por Christopher Cabrera de la Cruz </center>
+  </h2></i>
+  <h2><i>
+      <center> Programacion Web I </center>
+  </h2></i>
+  <hr>
+  <!--Informacion de la Pagina-->
+  <p> Cuando Hablamos sobre la inteligencia artificial o IA pensamos en un robot que piensa como un humano
+    pero es todo lo contrario pues la IA es La Inteligencia Artificial (IA) es la simulación de la inteligencia humana
+    en máquinas para realizar tareas que normalmente requieren capacidades cognitivas humanas,
+    como el aprendizaje, la resolución de problemas, el reconocimiento de patrones y la toma de decisiones.
+    Consiste en el uso de algoritmos y sistemas computacionales para procesar datos,
+    entender el lenguaje, ver imágenes y actuar con un propósito específico,
+    siendo una tecnología fundamental en la innovación actual
+    que se aplica en asistentes virtuales, sistemas de recomendación y más </p>
+
+
+
+  <center><img width="700"
+      src="https://we-educacion.com/web/image/40018/futuro-robot-inteligencia-artificial-fondo-sistema-red.jpg">
+  </center>
+
+
+
+  <hr>
+  Existen diversas clasificaciones de la inteligencia artificial (IA),
+  pero una forma común de agruparlas es por su nivel de inteligencia y capacidad: IA débil o estrecha, IA general, y
+  Superinteligencia.
+  También se pueden clasificar por su capacidad de aprendizaje en máquinas reactivas, memoria limitada, teoría de la
+  mente, y autoconciencia. Además, se pueden distinguir por sus aplicaciones en áreas como visión artificial,
+  procesamiento de lenguaje natural, automatización, entre otra
+  Tipos de IA por nivel de inteligencia:
+  <hr>
+  
+
+   <center><p><img alt="Cambiar imagen" height="400"
+   onmouseout="this.src='https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/12/20/inteligencia-artificial.jpeg';"
+    onmouseover="this.src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBnyszkEBJynCwqXVYshaM6WMW-vwCoD2j0A&s';"
+   src="https://imagenes.20minutos.es/files/image_1920_1080/uploads/imagenes/2023/12/20/inteligencia-artificial.jpeg" /></p></main></center>
+
+
+  <h1><b><i>
+
+        <center>Tipos de Inteligencias artificiales</center>
+
+  </h1></b></i>
+
+  IA Débil o Estrecha (ANI):
+  Se enfoca en tareas específicas, como asistentes virtuales o sistemas de recomendación.
+  IA General (AGI):
+  Capaz de realizar cualquier tarea intelectual que un humano puede hacer, aprendiendo y adaptándose de forma autónoma.
+  <hr>
+
+  Superinteligencia (ASI):
+  Un concepto teórico donde la IA supera la inteligencia humana en todos los aspectos.
+  <hr>
+
+  Tipos de IA por capacidad de aprendizaje:
+  Máquinas Reactivas:
+  Responden a estímulos con base en reglas preprogramadas, sin memoria ni capacidad de aprendizaje.
+  <hr>
+
+  Memoria Limitada:
+  Utilizan memoria para aprender de datos pasados y mejorar su desempeño, como la mayoría de las IA modernas.
+  <hr>
+
+  Teoría de la Mente:
+  Capaces de comprender emociones, pensamientos y estados mentales, tanto en humanos como en otros sistemas de IA.
+  <hr>
+
+  Autoconciencia:
+  Un concepto aún no alcanzado, donde la IA tendría conciencia de sí misma y sus propias capacidades.
+  <hr>
+
+  Ejemplos de sistemas de IA por aplicación:
+  Asistentes virtuales: Como Siri o Alexa, que responden a comandos de voz y realizan tareas.
+  Motores de búsqueda: Como Google, que utilizan IA para clasificar y mostrar resultados relevantes.
+  <hr>
+
+  Sistemas de reconocimiento de voz y rostro: Utilizados en seguridad y autenticación.
+  <hr>
+
+  Robots: Con diferentes niveles de autonomía, desde robots industriales hasta robots de exploración.
+  <hr>
+
+  Vehículos autónomos: Que se conducen por sí mismos utilizando IA para la navegación y toma de decisiones.
+  <hr>
+
+  Sistemas de recomendación: Como los de Netflix o Spotify, que sugieren contenido basado en tus preferencias.
+  <hr>
+
+  Software de análisis de imágenes: Utilizado en medicina, seguridad y otros campos para detectar patrones y anomalías.
+  <hr>
+
+  <center><img width="700" src="https://martinrodriguezhernandez.com/wp-content/uploads/2024/02/IA.jpg"></center>
+
+  <hr>
+
+  <h1><b><i>
+
+        |° Inteligencias artificiales mas usadas y mas eficientes
+
+  </h1></b></i>
+
+  <!--Termina informacion de la pagina-->
+  <div class="container">
+    <table id="tabla" data-height="350" data-auto-refresh="true">
+      <thead>
+        <tr>
+
+          <th data-field="nombreIA">Nombre de la IA</th>
+          <th data-field="tipoIA">Tipo de IA</th>
+          <th data-field="funcionIA">Funcion </th>
+          <th data-field="añoLanzamiento">Año en que se lanzo </th>
+          <th data-field="logo">Logo de la IA</th>
+
+        </tr>
+      </thead>
+    </table>
+  </div>
+    
+  <center><img width="800" src="https://www.educacionfutura.org/wp-content/uploads/2025/01/Imagen-IA.png"></center>
+
+  <hr><p><h2><i>¿Como funciona la inteligencia artificial?</h2></p></i>
+<h4>La IA funciona a través de la programación de sistemas para que analicen y aprendan de los datos, permitiéndoles: 
+Ver y reconocer objetos: Capacidad para identificar elementos visuales en imágenes y videos. 
+Entender y responder al lenguaje: Procesamiento del lenguaje hablado y escrito para interactuar y responder preguntas. 
+Aprender y tomar decisiones: Capacidad de aprender de la nueva información y tomar decisiones inteligentes basadas en experiencias previas. 
+Hacer recomendaciones: Generar sugerencias personalizadas para usuarios y expertos.</h4></p><hr>
+
+
+
+
+
+  <!-- Termina Elementos de HTML-->
+  </body>
+  <script>
+    /* Javascript */
+    function mostrarSeccion(id) {
+      // Ocultar todos los apartados
+      document.querySelectorAll("section").forEach(sec => {
+        sec.classList.remove("active");
+      });
+      document.getElementById(id).classList.add("active");
+    }
+    function abrirMenu() {
+      document.getElementById("miMenu").style.width = "250px";
+    }
+
+    function cerrarMenu() {
+      document.getElementById("miMenu").style.width = "0";
+    }
+
+    alert("Bienvenido ami pagina web");
+    alert("En esta pagina encontraras informacion sobre la IA");
+
+    $(function () {
+      $('#tabla').bootstrapTable({
+        data: datos,
+        formatNoMatches: function () {
+          return 'No hay datos';
+        }
+      });
+    });
+
+    var datos = [
+
+      {
+        nombreIA: "Chat Gpt",
+        tipoIA: "Chatbot de OpenAI",
+        funcionIA: "La IA más popular, destaca por su habilidad para mantener conversaciones fluidas, generar contenido y responder preguntas",
+        añoLanzamiento: "30 de Noviembre del año 2022"
+    
+
+      },
+
+      {
+        nombreIA: "Gemini",
+        tipoIA: "Asistente de IA",
+        funcionIA: "Un modelo conversacional avanzado que combina comprensión y generación de lenguaje, útil para búsquedas complejas y asistencia en contextos personales y empresariales",
+        añoLanzamiento: "Marzo del 2023"
+        
+
+
+
+      },
+      {
+        nombreIA: "Zapia",
+        tipoIA: "Chatbot de IA",
+        funcionIA: "IA implementada en WhatsApp que funciona como un chat donde tu le puedes preguntar cualquier cosa ",
+        añoLanzamiento: "Agosto del 2023"
+        
+
+
+      },
+      {
+        nombreIA: "Meta",
+        tipoIA: "Asistente de inteligencia artificial",
+        funcionIA: "Meta utiliza inteligencia artificial (IA) para mejorar la experiencia del usuario en sus plataformas, como Facebook, Instagram y WhatsApp, ofreciendo funciones como recomendaciones personalizadas y atención al cliente automatizada",
+        añoLanzamiento: "4 de febrero de 2004"
+        
+      },
+      {
+        nombreIA: "Grok",
+        tipoIA: "Asistente de IA",
+        funcionIA: "IA implementada ala aplicacion X que funciona para responder preguntas y solucionar conceptos del usuario",
+        añoLanzamiento: "Noviembre del 2023"
+        
+
+
+      },
+      {
+        nombreIA: "Claude",
+        tipoIA: "Chatbot y asistente de IA personalizado",
+        funcionIA: "Procesamiento avanzado de instrucciones extensas, útil para tareas complejas y análisis detallado",
+        añoLanzamiento: "Marzo del 2023"
+        
+
+      }
+
+    ]
+
+
+    /* Termina Javascript */
+  </script>
+  </body>
+  </html>
